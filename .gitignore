@@ -1,0 +1,703 @@
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/exposure_compensate.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/matchers.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/motion_estimators.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/seam_finders.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/timelapsers.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/util.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/util_inl.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/warpers.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/stitching/detail/warpers_inl.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/video/background_segm.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/video/tracking.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/video/tracking_c.h
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/video/video.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videoio/cap_ios.h
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videoio/videoio.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videoio/videoio_c.h
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/deblurring.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/fast_marching.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/fast_marching_inl.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/frame_source.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/global_motion.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/inpainting.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/log.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/motion_core.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/motion_stabilizing.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/optical_flow.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/outlier_rejection.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/ring_buffer.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/stabilizer.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Headers/videostab/wobble_suppression.hpp
+test-task/opencv_for_ios_book_samples-master/Chapter15_DetectingFacialFeatures/opencv2.framework/Versions/A/Resources/Info.plist
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/CvEffects-Prefix.pch
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/FaceAnimator.cpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/FaceAnimator.hpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/fuzzy_border.png
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/glasses.png
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/haarcascade_mcs_eyepair_big.xml
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/haarcascade_mcs_mouth.xml
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/lbpcascade_frontalface.xml
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/lena.jpg
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/mustache.png
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/PostcardPrinter.cpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/PostcardPrinter.hpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/Processing.cpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/Processing.hpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/Processing_Accelerate.cpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/Processing_NEON.cpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/RetroFilter.cpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/RetroFilter.hpp
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/scratches.png
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/text.png
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects/texture.jpg
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects.xcodeproj/project.pbxproj
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects.xcodeproj/xcuserdata/alexandershishkov.xcuserdatad/xcschemes/CvEffects.xcscheme
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects.xcodeproj/xcuserdata/alexandershishkov.xcuserdatad/xcschemes/xcschememanagement.plist
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcschemes/CvEffects.xcscheme
+test-task/opencv_for_ios_book_samples-master/CvEffects/CvEffects.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcschemes/xcschememanagement.plist
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Untitled.mov
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Untitled_compressed.mov
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/AppDelegate.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/AppDelegate.m
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/Default-568h@2x.png
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/Default.png
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/Default@2x.png
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/DetectingFaces-Info.plist
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/DetectingFaces-Prefix.pch
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/haarcascade_frontalface_alt.xml
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/haarcascade_frontalface_alt2.xml
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/lena.png
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/main.m
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/ViewController.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/ViewController.m
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/en.lproj/InfoPlist.strings
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/en.lproj/MainStoryboard_iPad.storyboard
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/Chapter04_DetectingFaces/en.lproj/MainStoryboard_iPhone.storyboard
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/project.pbxproj
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/project.xcworkspace/xcshareddata/Chapter04_DetectingFaces.xccheckout
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/project.xcworkspace/xcuserdata/alexandershishkov.xcuserdatad/UserInterfaceState.xcuserstate
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/project.xcworkspace/xcuserdata/linuxplus.xcuserdatad/UserInterfaceState.xcuserstate
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/xcuserdata/alexandershishkov.xcuserdatad/xcschemes/Chapter04_DetectingFaces.xcscheme
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/xcuserdata/alexandershishkov.xcuserdatad/xcschemes/xcschememanagement.plist
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcschemes/Chapter04_DetectingFaces.xcscheme
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/DetectingFaces.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcschemes/xcschememanagement.plist
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Headers
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/opencv2
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Resources
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/Current
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/opencv2
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/calib3d.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/cvconfig.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/features2d.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/highgui.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgcodecs.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgproc.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/ml.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/objdetect.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/opencv.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/opencv_modules.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/photo.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/shape.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/video.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videoio.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/world.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/calib3d/calib3d.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/calib3d/calib3d_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/affine.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/base.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/bufferpool.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/core.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/core_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/cuda.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/cuda.inl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/cuda_stream_accessor.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/cuda_types.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/cvdef.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/cvstd.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/cvstd.inl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/directx.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/eigen.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/fast_math.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/ippasync.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/mat.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/mat.inl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/matx.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/neon_utils.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/ocl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/ocl_genbase.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/opengl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/operations.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/optim.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/persistence.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/private.cuda.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/private.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/ptr.inl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/saturate.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/sse_utils.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/traits.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/types.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/types_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/utility.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/va_intel.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/version.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/wimage.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/hal/hal.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/hal/interface.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/hal/intrin.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/hal/intrin_cpp.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/hal/intrin_neon.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/core/hal/intrin_sse.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/features2d/features2d.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/all_indices.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/allocator.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/any.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/autotuned_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/composite_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/config.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/defines.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/dist.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/dummy.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/dynamic_bitset.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/flann.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/flann_base.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/general.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/ground_truth.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/hdf5.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/heap.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/hierarchical_clustering_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/index_testing.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/kdtree_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/kdtree_single_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/kmeans_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/linear_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/logger.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/lsh_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/lsh_table.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/matrix.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/miniflann.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/nn_index.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/object_factory.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/params.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/random.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/result_set.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/sampling.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/saving.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/simplex_downhill.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/flann/timer.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/highgui/highgui.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/highgui/highgui_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgcodecs/ios.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgproc/imgproc.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgproc/imgproc_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgproc/types_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/imgproc/detail/distortion_model.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/ml/ml.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/objdetect/detection_based_tracker.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/objdetect/objdetect.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/objdetect/objdetect_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/photo/cuda.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/photo/photo.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/photo/photo_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/shape/emdL1.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/shape/hist_cost.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/shape/shape.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/shape/shape_distance.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/shape/shape_transformer.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/warpers.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/autocalib.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/blenders.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/camera.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/exposure_compensate.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/matchers.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/motion_estimators.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/seam_finders.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/timelapsers.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/util.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/util_inl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/warpers.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/stitching/detail/warpers_inl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/video/background_segm.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/video/tracking.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/video/tracking_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/video/video.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videoio/cap_ios.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videoio/videoio.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videoio/videoio_c.h
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/deblurring.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/fast_marching.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/fast_marching_inl.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/frame_source.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/global_motion.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/inpainting.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/log.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/motion_core.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/motion_stabilizing.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/optical_flow.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/outlier_rejection.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/ring_buffer.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/stabilizer.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Headers/videostab/wobble_suppression.hpp
+test-task/opencv_for_ios_book_samples-master/DetectingFaces/opencv2.framework/Versions/A/Resources/Info.plist
+test-task/OpenCVForiPhone-master/.gitignore
+test-task/OpenCVForiPhone-master/opencvbuild.sh
+test-task/OpenCVForiPhone-master/README.markdown
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/opencv.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/opencv_modules.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/calib3d/calib3d.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/contrib/contrib.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/contrib/detection_based_tracker.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/contrib/hybridtracker.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/contrib/retina.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/core.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/core_c.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/devmem2d.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/eigen.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/gpumat.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/internal.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/mat.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/opengl_interop.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/operations.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/types_c.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/version.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/core/wimage.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/features2d/features2d.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/all_indices.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/allocator.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/any.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/autotuned_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/composite_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/config.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/defines.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/dist.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/dummy.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/dynamic_bitset.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/flann.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/flann_base.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/general.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/ground_truth.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/hdf5.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/heap.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/hierarchical_clustering_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/index_testing.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/kdtree_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/kdtree_single_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/kmeans_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/linear_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/logger.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/lsh_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/lsh_table.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/matrix.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/miniflann.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/nn_index.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/object_factory.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/params.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/random.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/result_set.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/sampling.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/saving.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/simplex_downhill.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/flann/timer.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/highgui/highgui.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/highgui/highgui_c.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/imgproc/imgproc.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/imgproc/imgproc_c.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/imgproc/types_c.h
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/legacy/blobtrack.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/legacy/compat.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/legacy/legacy.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/legacy/streams.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/ml/ml.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/objdetect/objdetect.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/autocalib.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/blenders.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/camera.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/exposure_compensate.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/matchers.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/motion_estimators.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/seam_finders.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/stitcher.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/util.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/util_inl.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/warpers.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/stitching/warpers_inl.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/video/background_segm.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/video/tracking.hpp
+test-task/OpenCVForiPhone-master/OpenCV.framework/Headers/opencv2/video/video.hpp
+test-task/OpenCVForiPhone-master/OpenCVClient/main.m
+test-task/OpenCVForiPhone-master/OpenCVClient/OpenCVClient-Info.plist
+test-task/OpenCVForiPhone-master/OpenCVClient/OpenCVClient-Prefix.pch
+test-task/OpenCVForiPhone-master/OpenCVClient/OpenCVClientAppDelegate.h
+test-task/OpenCVForiPhone-master/OpenCVClient/OpenCVClientAppDelegate.mm
+test-task/OpenCVForiPhone-master/OpenCVClient/OpenCVClientViewController.h
+test-task/OpenCVForiPhone-master/OpenCVClient/OpenCVClientViewController.mm
+test-task/OpenCVForiPhone-master/OpenCVClient/testimage.jpg
+test-task/OpenCVForiPhone-master/OpenCVClient/UIImage+OpenCV.h
+test-task/OpenCVForiPhone-master/OpenCVClient/UIImage+OpenCV.mm
+test-task/OpenCVForiPhone-master/OpenCVClient.xcodeproj/project.pbxproj
+test-task/OpenCVForiPhone-master/OpenCVClient/en.lproj/InfoPlist.strings
+test-task/OpenCVForiPhone-master/OpenCVClient/en.lproj/MainWindow.xib
+test-task/OpenCVForiPhone-master/OpenCVClient/en.lproj/OpenCVClientViewController.xib
+test-task/openCViOSFaceTrackingTutorial/README.md
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Headers
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/opencv2
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Resources
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/Current
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/opencv2
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/calib3d.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/cvconfig.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/features2d.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/highgui.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgcodecs.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgproc.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/ml.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/objdetect.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/opencv.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/opencv_modules.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/photo.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/shape.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/video.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videoio.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/world.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/calib3d/calib3d.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/calib3d/calib3d_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/affine.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/base.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/bufferpool.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/core.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/core_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/cuda.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/cuda.inl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/cuda_stream_accessor.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/cuda_types.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/cvdef.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/cvstd.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/cvstd.inl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/directx.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/eigen.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/fast_math.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/ippasync.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/mat.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/mat.inl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/matx.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/neon_utils.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/ocl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/ocl_genbase.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/opengl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/operations.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/optim.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/persistence.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/private.cuda.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/private.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/ptr.inl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/saturate.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/sse_utils.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/traits.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/types.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/types_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/utility.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/va_intel.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/version.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/wimage.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/hal/hal.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/hal/interface.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/hal/intrin.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/hal/intrin_cpp.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/hal/intrin_neon.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/core/hal/intrin_sse.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/features2d/features2d.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/all_indices.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/allocator.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/any.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/autotuned_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/composite_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/config.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/defines.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/dist.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/dummy.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/dynamic_bitset.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/flann.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/flann_base.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/general.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/ground_truth.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/hdf5.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/heap.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/hierarchical_clustering_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/index_testing.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/kdtree_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/kdtree_single_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/kmeans_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/linear_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/logger.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/lsh_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/lsh_table.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/matrix.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/miniflann.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/nn_index.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/object_factory.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/params.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/random.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/result_set.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/sampling.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/saving.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/simplex_downhill.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/flann/timer.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/highgui/highgui.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/highgui/highgui_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgcodecs/ios.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgproc/imgproc.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgproc/imgproc_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgproc/types_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/imgproc/detail/distortion_model.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/ml/ml.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/objdetect/detection_based_tracker.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/objdetect/objdetect.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/objdetect/objdetect_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/photo/cuda.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/photo/photo.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/photo/photo_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/shape/emdL1.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/shape/hist_cost.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/shape/shape.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/shape/shape_distance.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/shape/shape_transformer.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/warpers.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/autocalib.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/blenders.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/camera.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/exposure_compensate.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/matchers.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/motion_estimators.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/seam_finders.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/timelapsers.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/util.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/util_inl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/warpers.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/stitching/detail/warpers_inl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/video/background_segm.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/video/tracking.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/video/tracking_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/video/video.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videoio/cap_ios.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videoio/videoio.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videoio/videoio_c.h
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/deblurring.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/fast_marching.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/fast_marching_inl.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/frame_source.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/global_motion.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/inpainting.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/log.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/motion_core.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/motion_stabilizing.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/optical_flow.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/outlier_rejection.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/ring_buffer.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/stabilizer.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Headers/videostab/wobble_suppression.hpp
+test-task/openCViOSFaceTrackingTutorial/opencv2.framework/Versions/A/Resources/Info.plist
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/AppDelegate.h
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/AppDelegate.mm
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/Default-568h@2x.png
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/Default.png
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/Default@2x.png
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/haarcascade_frontalface_alt2.xml
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/main.mm
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial-Info.plist
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial-Prefix.pch
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/ViewController.h
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/ViewController.mm
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/project.pbxproj
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/project.xcworkspace/xcuserdata/evangelosgeorgiou.xcuserdatad/UserInterfaceState.xcuserstate
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/project.xcworkspace/xcuserdata/linuxplus.xcuserdatad/UserInterfaceState.xcuserstate
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/xcuserdata/evangelosgeorgiou.xcuserdatad/xcschemes/openCViOSFaceTrackingTutorial.xcscheme
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/xcuserdata/evangelosgeorgiou.xcuserdatad/xcschemes/xcschememanagement.plist
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcschemes/openCViOSFaceTrackingTutorial.xcscheme
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial.xcodeproj/xcuserdata/linuxplus.xcuserdatad/xcschemes/xcschememanagement.plist
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/en.lproj/InfoPlist.strings
+test-task/openCViOSFaceTrackingTutorial/openCViOSFaceTrackingTutorial/en.lproj/ViewController.xib
+test-task/Video Stream Demo/opencv2.framework/Headers
+test-task/Video Stream Demo/opencv2.framework/opencv2
+test-task/Video Stream Demo/opencv2.framework/Resources
+test-task/Video Stream Demo/opencv2.framework/Versions/Current
+test-task/Video Stream Demo/opencv2.framework/Versions/A/opencv2
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/calib3d.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/cvconfig.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/features2d.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/highgui.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgcodecs.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgproc.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/ml.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/objdetect.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/opencv.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/opencv_modules.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/photo.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/shape.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/video.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videoio.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/world.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/calib3d/calib3d.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/calib3d/calib3d_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/affine.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/base.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/bufferpool.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/core.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/core_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/cuda.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/cuda.inl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/cuda_stream_accessor.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/cuda_types.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/cvdef.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/cvstd.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/cvstd.inl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/directx.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/eigen.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/fast_math.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/ippasync.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/mat.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/mat.inl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/matx.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/neon_utils.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/ocl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/ocl_genbase.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/opengl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/operations.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/optim.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/persistence.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/private.cuda.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/private.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/ptr.inl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/saturate.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/sse_utils.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/traits.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/types.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/types_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/utility.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/va_intel.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/version.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/wimage.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/hal/hal.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/hal/interface.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/hal/intrin.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/hal/intrin_cpp.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/hal/intrin_neon.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/core/hal/intrin_sse.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/features2d/features2d.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/all_indices.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/allocator.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/any.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/autotuned_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/composite_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/config.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/defines.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/dist.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/dummy.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/dynamic_bitset.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/flann.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/flann_base.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/general.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/ground_truth.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/hdf5.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/heap.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/hierarchical_clustering_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/index_testing.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/kdtree_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/kdtree_single_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/kmeans_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/linear_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/logger.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/lsh_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/lsh_table.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/matrix.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/miniflann.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/nn_index.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/object_factory.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/params.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/random.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/result_set.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/sampling.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/saving.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/simplex_downhill.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/flann/timer.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/highgui/highgui.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/highgui/highgui_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgcodecs/imgcodecs_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgcodecs/ios.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgproc/imgproc.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgproc/imgproc_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgproc/types_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/imgproc/detail/distortion_model.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/ml/ml.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/objdetect/detection_based_tracker.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/objdetect/objdetect.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/objdetect/objdetect_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/photo/cuda.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/photo/photo.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/photo/photo_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/shape/emdL1.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/shape/hist_cost.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/shape/shape.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/shape/shape_distance.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/shape/shape_transformer.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/warpers.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/autocalib.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/blenders.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/camera.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/exposure_compensate.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/matchers.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/motion_estimators.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/seam_finders.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/timelapsers.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/util.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/util_inl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/warpers.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/stitching/detail/warpers_inl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/video/background_segm.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/video/tracking.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/video/tracking_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/video/video.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videoio/cap_ios.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videoio/videoio.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videoio/videoio_c.h
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/deblurring.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/fast_marching.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/fast_marching_inl.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/frame_source.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/global_motion.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/inpainting.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/log.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/motion_core.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/motion_stabilizing.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/optical_flow.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/outlier_rejection.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/ring_buffer.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/stabilizer.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Headers/videostab/wobble_suppression.hpp
+test-task/Video Stream Demo/opencv2.framework/Versions/A/Resources/Info.plist
+test-task/Untitled.mov
+test-task/Untitled_compressed.mov
+test-task/DetectingFaces/Untitled.mov
+test-task/DetectingFaces/Untitled_compressed.mov
+test-task/Video Stream Demo/Untitled.mov
+test-task/Video Stream Demo/Video Stream DemoTests/Untitled.mov
