@@ -2,7 +2,7 @@
 //  TweetTableViewCell.swift
 //  Smashtag
 //
-//  Created by MarinaS on 14/01/2018.
+//  Created by MarinaS on 16/03/2017.
 //  Copy of code as instructed by instructor...
 //  Copyright © 2017 MarinaS. All rights reserved.
 //
