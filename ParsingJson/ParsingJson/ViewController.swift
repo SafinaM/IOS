@@ -53,6 +53,7 @@ class ViewController: UIViewController {
 								options: .mutableContainers) as? [String: Any] else {return}
 				let course = Course(json: json)
 				print("name = ", course.name)
+				print("json = ", json)
 			}  catch let jsonErr {
 				print("Error serialization json: ", jsonErr)
 			}

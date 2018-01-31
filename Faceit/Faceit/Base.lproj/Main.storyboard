@@ -122,6 +122,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Emotions" id="Qij-rV-hmk"/>
+                    <connections>
+                        <outlet property="happ" destination="mWQ-0t-BGa" id="al5-xu-KNX"/>
+                        <outlet property="happy" destination="mWQ-0t-BGa" id="ahN-Ov-VxM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEY-nF-pHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
