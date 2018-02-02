@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 @IBDesignable
 class FaceView: UIView {
 	
@@ -78,18 +77,26 @@ class FaceView: UIView {
     override func draw(_ rect: CGRect) {
 		color.set()
 		delta = (direction == .left) ? -skullRadius: skullRadius
+		let brain: Brain = Brain(dim: 4)
 		for index in 0...2 {
-			let number = index + 1
-			let x: CGFloat = skullCenter.x + CGFloat(index * 50)
-			var rect = CGRect(x: x, y: skullCenter.y, width: skullRadius, height: skullRadius)
-			var cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
-			if cell.contains(point: touchPoint) {
-				touchPoint = CGPoint()
-				cell.setActive()
-				rect = CGRect(x: x + delta, y: skullCenter.y, width: skullRadius, height: skullRadius)
-				cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
+//			let number = index + 1
+//			let x: CGFloat = skullCenter.x + CGFloat(index * 50)
+//			var rect = CGRect(x: x, y: skullCenter.y, width: skullRadius, height: skullRadius)
+//			var cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
+//			if cell.contains(point: touchPoint) {
+//				touchPoint = CGPoint()
+//				cell.setActive()
+//				rect = CGRect(x: x + delta, y: skullCenter.y, width: skullRadius, height: skullRadius)
+//				cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
+//			}
+			
+//			pathForSkull(cell: cell).stroke()
+		}
+		for i in 0..<4 {
+			for j in 0..<4 {
+				let cell: Cell = brain.getCell(i: i, j: j)
+				pathForSkull(cell: cell).stroke()
 			}
-			pathForSkull(cell: cell).stroke()
 		}
     }
 	

@@ -27,13 +27,37 @@ struct Cell
 	}
 }
 
-
 class Brain
 {
-	static var size = 4
+	static let size: Int = 4
+	static let side: CGFloat = 40.0
+	static let step: CGFloat = 50
+	static let origin: CGPoint = CGPoint(x: 200, y: 200)
+	
 	var arr = Array2D<Cell>(columns: size, rows: size, defaultValue: Cell())
 	
+	init(dim: Int) {
+		var number = 1
+		for i in 0..<dim {
+			for j in 0..<dim {
+				let x: CGFloat = Brain.origin.x + CGFloat(j) * Brain.step
+				let y: CGFloat = Brain.origin.y + CGFloat(i) * Brain.step
+				let rect: CGRect = CGRect(x: x, y: y, width: Brain.side, height: Brain.side)
+				let cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
+				arr[i, j] = cell
+				number += 1
+			}
+		}
+	}
+	
+	func getCell(i: Int, j: Int) -> Cell {
+		
+		return arr[i,j]
+	}
+	
+	
 }
+
 
 class Array2D<T> {
 	
