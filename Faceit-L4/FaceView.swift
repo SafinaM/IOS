@@ -19,7 +19,6 @@ class FaceView: UIView {
 		return min(bounds.size.width, bounds.size.height) / 8 * scale
 	}
 	
-	
 	@IBInspectable
 	var skullCenter: CGPoint {
 		return CGPoint(x: bounds.midX, y: bounds.midY)
@@ -34,13 +33,15 @@ class FaceView: UIView {
 	@IBInspectable
 	var direction: Movement.Direction = .left {didSet { setNeedsDisplay() } }
 	
+	static let nCells: Int = 4
+	
 	var touchPoint: CGPoint = CGPoint()
 	
 	private var delta: CGFloat = 0
 	
 	var rects: [UIBezierPath] = [UIBezierPath]()
 	
-	let brain: Brain = Brain(dim: 4)
+	let brain: Brain = Brain(dim: FaceView.nCells)
 	
 	func changeScale(byReactingTo pinchRecognezer: UIPinchGestureRecognizer)
 	{
@@ -78,23 +79,9 @@ class FaceView: UIView {
 	
     override func draw(_ rect: CGRect) {
 		color.set()
-//		delta = (direction == .left) ? -skullRadius: skullRadius
-				for index in 0...2 {
-//			let number = index + 1
-//			let x: CGFloat = skullCenter.x + CGFloat(index * 50)
-//			var rect = CGRect(x: x, y: skullCenter.y, width: skullRadius, height: skullRadius)
-//			var cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
-//			if cell.contains(point: touchPoint) {
-//				touchPoint = CGPoint()
-//				cell.setActive()
-//				rect = CGRect(x: x + delta, y: skullCenter.y, width: skullRadius, height: skullRadius)
-//				cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
-//			}
-			
-//			pathForSkull(cell: cell).stroke()
-		}
-		for i in 0..<4 {
-			for j in 0..<4 {
+
+		for i in 0..<FaceView.nCells {
+			for j in 0..<FaceView.nCells {
 				//				let cell: Cell = brain[i,j]
 				if brain[i,j].contains(point: touchPoint) {
 					print("MSD BEFOR brain[\(i), \(j)] contains point \(touchPoint)")
@@ -111,13 +98,16 @@ class FaceView: UIView {
 				
 			}
 		}
-		for i in 0..<4 {
-			for j in 0..<4 {
+		for i in 0..<FaceView.nCells {
+			for j in 0..<FaceView.nCells {
 				if !brain[i,j].empty {
 					pathForSkull(cell:
 						brain[i,j]).stroke()
 				}
 			}
+		}
+		if brain.finished() {
+			print("MSD It is done!!!")
 		}
 	}
 	
