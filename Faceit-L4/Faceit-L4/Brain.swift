@@ -68,6 +68,7 @@ class Brain
 			}
 		}
 		setLastAsEmpty()
+		shuffle()
 		while (!checkSolving()) {
 			shuffle()
 			print("MSD checkSolving = ", checkSolving())
@@ -101,6 +102,19 @@ class Brain
 			return true
 		}
 		return false
+	}
+	
+	func finished() -> Bool {
+		var k: Int = 0
+		for i in 0..<Brain.size {
+			for j in 0..<Brain.size {
+				if arr[i, j].name != String(k+1) {
+					return false
+				}
+				k += 1
+			}
+		}
+		return true
 	}
 	
 	func setEmpty(i: Int, j: Int) -> Void {
@@ -171,7 +185,7 @@ class Brain
 				}
 			}
 		}
-		return (N + iEmpty) % 2 == 0
+		return (N + iEmpty+1) % 2 == 0
 	}
 }
 
