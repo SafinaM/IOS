@@ -40,6 +40,8 @@ class FaceView: UIView {
 	
 	var rects: [UIBezierPath] = [UIBezierPath]()
 	
+	let brain: Brain = Brain(dim: 4)
+	
 	func changeScale(byReactingTo pinchRecognezer: UIPinchGestureRecognizer)
 	{
 
@@ -76,9 +78,8 @@ class FaceView: UIView {
 	
     override func draw(_ rect: CGRect) {
 		color.set()
-		delta = (direction == .left) ? -skullRadius: skullRadius
-		let brain: Brain = Brain(dim: 4)
-		for index in 0...2 {
+//		delta = (direction == .left) ? -skullRadius: skullRadius
+				for index in 0...2 {
 //			let number = index + 1
 //			let x: CGFloat = skullCenter.x + CGFloat(index * 50)
 //			var rect = CGRect(x: x, y: skullCenter.y, width: skullRadius, height: skullRadius)
@@ -94,10 +95,30 @@ class FaceView: UIView {
 		}
 		for i in 0..<4 {
 			for j in 0..<4 {
-				let cell: Cell = brain.getCell(i: i, j: j)
-				pathForSkull(cell: cell).stroke()
+				//				let cell: Cell = brain[i,j]
+				if brain[i,j].contains(point: touchPoint) {
+					print("MSD BEFOR brain[\(i), \(j)] contains point \(touchPoint)")
+					touchPoint = CGPoint()
+					print("MSD BEFOR brain[\(brain.iActive), \(brain.jActive)] is active")
+					print("MSD brain[\(brain.iEmpty), \(brain.jEmpty)] is empty")
+					brain.setActive(i: i, j: j)
+					print("MSD AFTER brain[\(brain.iActive), \(brain.jActive)] is active")
+					
+					brain.swapActiveAndEmpty()
+					
+					print("MSD AFTER setting brain[\(brain.iEmpty), \(brain.jEmpty)] is empty")
+				}
+				
 			}
 		}
-    }
+		for i in 0..<4 {
+			for j in 0..<4 {
+				if !brain[i,j].empty {
+					pathForSkull(cell:
+						brain[i,j]).stroke()
+				}
+			}
+		}
+	}
 	
 }

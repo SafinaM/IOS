@@ -25,6 +25,18 @@ struct Cell
 	mutating func setActive() -> Void {
 		active = true
 	}
+	
+	mutating func setEmpty() -> Void {
+		empty = true
+	}
+	
+	mutating func resetActive() -> Void {
+		active = false
+	}
+	
+	mutating func resetEmpty() -> Void {
+		empty = false
+	}
 }
 
 class Brain
@@ -33,6 +45,12 @@ class Brain
 	static let side: CGFloat = 40.0
 	static let step: CGFloat = 50
 	static let origin: CGPoint = CGPoint(x: 200, y: 200)
+	
+	var iEmpty: Int = -1
+	var jEmpty: Int = -1
+	
+	var iActive: Int = -1
+	var jActive: Int = -1
 	
 	var arr = Array2D<Cell>(columns: size, rows: size, defaultValue: Cell())
 	
@@ -48,12 +66,93 @@ class Brain
 				number += 1
 			}
 		}
+//		setActive(i: 2, j: 3)
+		setLastAsEmpty()
 	}
 	
-	func getCell(i: Int, j: Int) -> Cell {
+//	func getCell(i: Int, j: Int) -> Cell {
+//		
+//		return arr[i,j]
+//	}
+	
+	func setActive(i: Int, j: Int) -> Void {
+
+		if i == iEmpty, j == jEmpty {
+			return
+		}
+		if verifyOfEmptyNeighbours(i: i, j: j) {
+			setActiveIndecies(i: i, j: j)
+			arr[i,j].setActive()
+			arr[i,j].resetEmpty()
+		}
 		
-		return arr[i,j]
 	}
+	
+	private func verifyOfEmptyNeighbours(i: Int, j: Int) -> Bool {
+		
+		if i == iEmpty + 1, j == jEmpty {
+			return true
+		}
+		else if i == iEmpty - 1, j == jEmpty {
+			return true
+		}
+		else if i == iEmpty, j == jEmpty + 1 {
+			return true
+		}
+		else if i == iEmpty, j == jEmpty - 1 {
+			return true
+		}
+		return false
+	}
+	
+	func setEmpty(i: Int, j: Int) -> Void {
+	
+		setEmptyIndecies(i: i, j: j)
+		arr[i,j].setEmpty()
+		arr[i,j].resetActive()
+	}
+	
+	private func setActiveIndecies(i: Int, j: Int) -> Void {
+		
+		iActive = i
+		jActive = j
+	}
+	
+	private func resetActiveIndecies() -> Void {
+		
+		iActive = -1
+		jActive = -1
+	}
+	
+	private func setEmptyIndecies(i: Int, j: Int) -> Void {
+		
+		iEmpty = i
+		jEmpty = j
+	}
+	
+	private func setLastAsEmpty() -> Void {
+		setEmpty(i: Brain.size-1, j: Brain.size-1)
+	}
+	
+	
+	func swapActiveAndEmpty() -> Void {
+		
+		if iActive != -1, jActive != -1, iEmpty != -1, jEmpty != -1 {
+			Swift.swap(&arr[iActive, jActive].empty, &arr[iEmpty, jEmpty].empty)
+			Swift.swap(&arr[iActive, jActive].name, &arr[iEmpty, jEmpty].name)
+			setEmptyIndecies(i: iActive, j: jActive)
+		}
+	}
+	
+	subscript(i: Int, j: Int) -> Cell {
+		get {
+			return arr[i,j]
+		}
+		set {
+			arr[i,j] = newValue
+		}
+	}
+	
 	
 	
 }
