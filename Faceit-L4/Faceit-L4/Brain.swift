@@ -68,7 +68,7 @@ class Brain
 		}
 //		setActive(i: 2, j: 3)
 		setLastAsEmpty()
-		shuffle(n: 10)
+		shuffle()
 	}
 	
 //	func getCell(i: Int, j: Int) -> Cell {
@@ -154,12 +154,11 @@ class Brain
 		}
 	}
 	
-	private func shuffle(n: Int) -> Void {
-//		var times: Int = n
+	private func shuffle() -> Void {
 		let max: UInt32 = UInt32(Brain.size * Brain.size)
 		var k: UInt32 = 0
 		while(k != max) {
-			let randomNum:UInt32 = arc4random_uniform(max-k) + k;
+			let randomNum:UInt32 = arc4random_uniform(max-k) + k
 			Swift.swap(&arr[Int(k)].name, &arr[Int(randomNum)].name)
 			k += 1
 		}
