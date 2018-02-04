@@ -42,9 +42,10 @@ struct Cell
 class Brain
 {
 	static let size: Int = 4
-	static let side: CGFloat = 40.0
-	static let step: CGFloat = 50
-	static let origin: CGPoint = CGPoint(x: 200, y: 200)
+	static let last: Int = Brain.size * Brain.size
+	static let side: CGFloat = 60.0
+	static let step: CGFloat = 70.0
+	static let origin: CGPoint = CGPoint(x: 100, y: 200)
 	
 	var iEmpty: Int = -1
 	var jEmpty: Int = -1
@@ -66,15 +67,12 @@ class Brain
 				number += 1
 			}
 		}
-//		setActive(i: 2, j: 3)
 		setLastAsEmpty()
-		shuffle()
+		while (!checkSolving()) {
+			shuffle()
+			print("MSD checkSolving = ", checkSolving())
+		}
 	}
-	
-//	func getCell(i: Int, j: Int) -> Cell {
-//		
-//		return arr[i,j]
-//	}
 	
 	func setActive(i: Int, j: Int) -> Void {
 
@@ -86,7 +84,6 @@ class Brain
 			arr[i,j].setActive()
 			arr[i,j].resetEmpty()
 		}
-		
 	}
 	
 	private func verifyOfEmptyNeighbours(i: Int, j: Int) -> Bool {
@@ -155,7 +152,7 @@ class Brain
 	}
 	
 	private func shuffle() -> Void {
-		let max: UInt32 = UInt32(Brain.size * Brain.size)
+		let max: UInt32 = UInt32(Brain.last-1)
 		var k: UInt32 = 0
 		while(k != max) {
 			let randomNum:UInt32 = arc4random_uniform(max-k) + k
@@ -163,8 +160,20 @@ class Brain
 			k += 1
 		}
 	}
+	
+	private func checkSolving() -> Bool {
+		var N: Int = 0;
+		for i in 0..<Brain.last {
+			for j in i+1..<Brain.last {
+				if Int(arr[i].name)! > Int(arr[j].name)!{
+					
+					N += 1
+				}
+			}
+		}
+		return (N + iEmpty) % 2 == 0
+	}
 }
-
 
 class Array2D<T> {
 	
