@@ -68,6 +68,7 @@ class Brain
 		}
 //		setActive(i: 2, j: 3)
 		setLastAsEmpty()
+		shuffle(n: 10)
 	}
 	
 //	func getCell(i: Int, j: Int) -> Cell {
@@ -153,8 +154,16 @@ class Brain
 		}
 	}
 	
-	
-	
+	private func shuffle(n: Int) -> Void {
+//		var times: Int = n
+		let max: UInt32 = UInt32(Brain.size * Brain.size)
+		var k: UInt32 = 0
+		while(k != max) {
+			let randomNum:UInt32 = arc4random_uniform(max-k) + k;
+			Swift.swap(&arr[Int(k)].name, &arr[Int(randomNum)].name)
+			k += 1
+		}
+	}
 }
 
 
@@ -179,6 +188,15 @@ class Array2D<T> {
 		}
 	}
 	
+	subscript(index: Int) -> T {
+		get {
+			return matrix[index]
+		}
+		set {
+			matrix[index] = newValue
+		}
+	}
+	
 	func columnCount() -> Int {
 		return self.columns
 	}
@@ -186,4 +204,7 @@ class Array2D<T> {
 	func rowCount() -> Int {
 		return self.rows
 	}
+
 }
+
+
