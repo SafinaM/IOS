@@ -39,13 +39,16 @@ struct Cell
 	}
 }
 
+protocol BrainDelegate: class {
+	func getCenter() -> CGPoint
+}
 class Brain
 {
-	static let size: Int = 4
-	static let last: Int = Brain.size * Brain.size
-	static let side: CGFloat = 60.0
+	static var nCells: Int = 4
+	static let last: Int = Brain.nCells * Brain.nCells
+	static var side: CGFloat = 60.0
 	static let step: CGFloat = 70.0
-	static let origin: CGPoint = CGPoint(x: 100, y: 200)
+	static var origin: CGPoint = CGPoint(x: 100, y: 100)
 	
 	var iEmpty: Int = -1
 	var jEmpty: Int = -1
@@ -53,10 +56,11 @@ class Brain
 	var iActive: Int = -1
 	var jActive: Int = -1
 	
-	var arr = Array2D<Cell>(columns: size, rows: size, defaultValue: Cell())
+	var arr = Array2D<Cell>(columns: Brain.nCells, rows: Brain.nCells, defaultValue: Cell())
 	
 	init(dim: Int) {
 		var number = 1
+		Brain.nCells = dim
 		for i in 0..<dim {
 			for j in 0..<dim {
 				let x: CGFloat = Brain.origin.x + CGFloat(j) * Brain.step
@@ -106,8 +110,8 @@ class Brain
 	
 	func finished() -> Bool {
 		var k: Int = 0
-		for i in 0..<Brain.size {
-			for j in 0..<Brain.size {
+		for i in 0..<Brain.nCells {
+			for j in 0..<Brain.nCells {
 				if arr[i, j].name != String(k+1) {
 					return false
 				}
@@ -143,7 +147,7 @@ class Brain
 	}
 	
 	private func setLastAsEmpty() -> Void {
-		setEmpty(i: Brain.size-1, j: Brain.size-1)
+		setEmpty(i: Brain.nCells-1, j: Brain.nCells-1)
 	}
 	
 	
@@ -185,7 +189,7 @@ class Brain
 				}
 			}
 		}
-		return (N + iEmpty+1) % 2 == 0
+		return (N + iEmpty + 1) % 2 == 0
 	}
 }
 

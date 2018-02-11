@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 			let handler = #selector(FaceView.changeScale(byReactingTo:))
 			let pinchRecognizer = UIPinchGestureRecognizer(target: faceView, action: handler)
 			faceView.addGestureRecognizer(pinchRecognizer)
+			faceView.screenSize = UIScreen.main.bounds.size
 			let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.moveCell(byReactingTo:)))
 			tapRecognizer.numberOfTapsRequired = 1
 			faceView.addGestureRecognizer(tapRecognizer)

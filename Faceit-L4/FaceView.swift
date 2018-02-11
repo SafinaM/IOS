@@ -9,7 +9,20 @@
 import UIKit
 
 @IBDesignable
-class FaceView: UIView {
+class FaceView: UIView, BrainDelegate {
+	
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+	}
+	
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+	}
+	
+	
+	var screenSize: CGSize?
+	let screenWidth = UIScreen.main.bounds.size.width
+	let screenHeight = UIScreen.main.bounds.size.height
 	
 	@IBInspectable
 	var scale: CGFloat = 0.5 {didSet { setNeedsDisplay() } }
@@ -41,11 +54,9 @@ class FaceView: UIView {
 	
 	var rects: [UIBezierPath] = [UIBezierPath]()
 	
-	let brain: Brain = Brain(dim: FaceView.nCells)
-	
+	let brain: Brain = Brain(dim: 4)
 	func changeScale(byReactingTo pinchRecognezer: UIPinchGestureRecognizer)
 	{
-
 		switch pinchRecognezer.state {
 		case .changed, .ended:
 			scale *= pinchRecognezer.scale
@@ -67,7 +78,7 @@ class FaceView: UIView {
 		myText.draw(in: inRect, withAttributes: textFontAttributes)
 	}
 	
-	private func pathForSkull(cell: Cell) -> UIBezierPath
+	private func pathForCell(cell: Cell) -> UIBezierPath
 	{
 		let rect = cell.rect
 		let path = UIBezierPath(rect: cell.rect)
@@ -101,7 +112,7 @@ class FaceView: UIView {
 		for i in 0..<FaceView.nCells {
 			for j in 0..<FaceView.nCells {
 				if !brain[i,j].empty {
-					pathForSkull(cell:
+					pathForCell(cell:
 						brain[i,j]).stroke()
 				}
 			}
@@ -109,6 +120,10 @@ class FaceView: UIView {
 		if brain.finished() {
 			print("MSD It is done!!!")
 		}
+	}
+	
+	func getCenter() -> CGPoint {
+		return skullCenter
 	}
 	
 }
