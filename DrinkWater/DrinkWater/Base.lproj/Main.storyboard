@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrinkWater" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg8-02-f71" customClass="PushButton" customModule="DrinkWater" customModuleProvider="target">
+                                <rect key="frame" x="137" y="383.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6Bl-u9-Ny1"/>
+                                    <constraint firstAttribute="width" constant="100" id="Jdr-Cl-yDz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fn3-vU-0Us"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKP-Ib-hd1" customClass="PushButton" customModule="DrinkWater" customModuleProvider="target">
+                                <rect key="frame" x="162" y="503.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="kGI-Pg-HKe"/>
+                                    <constraint firstAttribute="height" constant="50" id="sEU-ww-iaU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgq-uC-W3a"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBi-ll-juA">
+                                <rect key="frame" x="37" y="63.5" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.92294770079999999" green="0.88544677273354022" blue="0.55909034974804273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="gbm-Oz-zQX"/>
+                                    <constraint firstAttribute="width" constant="300" id="oTE-y4-MxS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqX-FD-y8d" customClass="CounterView" customModule="DrinkWater" customModuleProvider="target">
+                                <rect key="frame" x="67" y="93" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="GSz-kd-NCg"/>
+                                    <constraint firstAttribute="height" constant="240" id="gPe-xm-gFB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3r-wb-jNQ">
+                                <rect key="frame" x="176" y="192" width="22" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tg8-02-f71" firstAttribute="top" secondItem="FBi-ll-juA" secondAttribute="bottom" constant="20" id="6lP-Hc-YXT"/>
+                            <constraint firstItem="Tg8-02-f71" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="Iek-cq-xRl"/>
+                            <constraint firstItem="FBi-ll-juA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ikw-L0-S7W"/>
+                            <constraint firstItem="n3r-wb-jNQ" firstAttribute="centerX" secondItem="bqX-FD-y8d" secondAttribute="centerX" id="J7r-XQ-7ZA"/>
+                            <constraint firstItem="bqX-FD-y8d" firstAttribute="centerY" secondItem="FBi-ll-juA" secondAttribute="centerY" id="LRC-Mb-rJL"/>
+                            <constraint firstItem="Tg8-02-f71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M80-Sh-Idu"/>
+                            <constraint firstItem="n3r-wb-jNQ" firstAttribute="centerY" secondItem="bqX-FD-y8d" secondAttribute="centerY" id="cE2-GT-FCP"/>
+                            <constraint firstItem="mKP-Ib-hd1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ciH-Xc-xCF"/>
+                            <constraint firstItem="mKP-Ib-hd1" firstAttribute="top" secondItem="Tg8-02-f71" secondAttribute="bottom" constant="20" id="hW0-Py-CCI"/>
+                            <constraint firstItem="bqX-FD-y8d" firstAttribute="centerX" secondItem="FBi-ll-juA" secondAttribute="centerX" id="wiS-xR-4Ce"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="n3r-wb-jNQ" id="v1L-Rk-eEg"/>
+                        <outlet property="counterView" destination="bqX-FD-y8d" id="tnl-VP-LMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261.5999999999999" y="28.335832083958024"/>
+        </scene>
+    </scenes>
+</document>
