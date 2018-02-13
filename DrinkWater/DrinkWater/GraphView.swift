@@ -74,7 +74,7 @@ import UIKit
 			graphPath.addLine(to: nextPoint)
 		}
 		
-		//graphPath.stroke()
+		context.saveGState()
 		
 		let clippingPath = graphPath.copy() as! UIBezierPath
 		
@@ -89,9 +89,19 @@ import UIKit
 		
 		// draw the line on top of the clipped gradient
 		context.drawLinearGradient(gradient, start: graphStartPoint, end: graphEndPoint, options: [])
+		context.restoreGState()
 		graphPath.lineWidth = 2.0
 		graphPath.stroke()
-
+		
+//		Draw the circles on top of the graph stroke
+		for i in 0..<graphPoints.count {
+			var point = CGPoint(x: columnXPoint(i), y: columnYPoint(graphPoints[i]))
+			point.x -= Constants.circleDiameter / 2
+			point.y -= Constants.circleDiameter / 2
+			
+			let circle =  UIBezierPath(ovalIn: CGRect(origin: point, size: CGSize(width: Constants.circleDiameter, height: Constants.circleDiameter)))
+			circle.fill()
+		}
     }
 	
 
