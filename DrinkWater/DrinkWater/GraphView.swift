@@ -87,7 +87,7 @@ import UIKit
 		let graphStartPoint = CGPoint(x: margin, y: highestYPoint)
 		let graphEndPoint = CGPoint(x: margin, y: bounds.height)
 		
-		// draw the line on top of the clipped gradient
+//		 draw the line on top of the clipped gradient
 		context.drawLinearGradient(gradient, start: graphStartPoint, end: graphEndPoint, options: [])
 		context.restoreGState()
 		graphPath.lineWidth = 2.0
@@ -102,8 +102,29 @@ import UIKit
 			let circle =  UIBezierPath(ovalIn: CGRect(origin: point, size: CGSize(width: Constants.circleDiameter, height: Constants.circleDiameter)))
 			circle.fill()
 		}
+		
+		//	Draw horizontal graph lines on the tom of everything
+		
+		let linePath = UIBezierPath()
+		
+		//	top line
+		linePath.move(to: CGPoint(x: margin, y: topBorder))
+		linePath.addLine(to: CGPoint(x: width, y: topBorder))
+		
+		//	center line
+		linePath.move(to: CGPoint(x: margin, y: graphHeight/2 + topBorder))
+		linePath.addLine(to: CGPoint(x: width - margin, y: graphHeight/2 + topBorder))
+		
+		//	bottom line
+		linePath.move(to: CGPoint(x: margin, y: height - bottomBorder))
+		linePath.addLine(to: CGPoint(x: width - margin, y: height - bottomBorder))
+		
+		let color = UIColor(white: 1.0, alpha: Constants.colorAlpha)
+		color.setStroke()
+		linePath.lineWidth = 1.0
+		linePath.stroke()
+		
     }
-	
 
 }
 
