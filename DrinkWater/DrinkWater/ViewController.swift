@@ -55,5 +55,13 @@ class ViewController: UIViewController {
 		}
 		isGraphViewShowing = !isGraphViewShowing
 	}
+	
+	func setupGraphDisplay() {
+		let maxDayIndex = stackView.arrangedSubviews.count - 1
+		graphView.graphPoints[graphView.graphPoints.count-1] = counterView.counter
+		graphView.setNeedsDisplay()
+		maxLabel.text = "\(graphView.graphPoints.max()!)"
+		
+	}
 }
 
