@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BackgroundView" customModule="DrinkWater" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -59,6 +59,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqX-FD-y8d" customClass="CounterView" customModule="DrinkWater" customModuleProvider="target">
                                         <rect key="frame" x="30" y="30" width="240" height="240"/>
                                         <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HsH-ms-FIa" customClass="MedalView" customModule="DrinkWater" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="147" width="80" height="80"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3r-wb-jNQ">
                                                 <rect key="frame" x="99" y="99" width="43" height="43"/>
                                                 <constraints>
@@ -71,10 +74,14 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="HsH-ms-FIa" firstAttribute="centerX" secondItem="n3r-wb-jNQ" secondAttribute="centerX" id="6kj-l1-gQ4"/>
                                             <constraint firstItem="n3r-wb-jNQ" firstAttribute="centerY" secondItem="bqX-FD-y8d" secondAttribute="centerY" id="9kE-VN-WW3"/>
+                                            <constraint firstAttribute="bottom" secondItem="HsH-ms-FIa" secondAttribute="bottom" constant="13" id="AmM-Ef-MAG"/>
                                             <constraint firstAttribute="width" constant="240" id="GSz-kd-NCg"/>
                                             <constraint firstItem="n3r-wb-jNQ" firstAttribute="centerX" secondItem="bqX-FD-y8d" secondAttribute="centerX" id="Q6B-kR-axJ"/>
                                             <constraint firstAttribute="height" constant="240" id="gPe-xm-gFB"/>
+                                            <constraint firstItem="HsH-ms-FIa" firstAttribute="top" secondItem="n3r-wb-jNQ" secondAttribute="bottom" constant="5" id="hjt-CE-Err"/>
+                                            <constraint firstItem="HsH-ms-FIa" firstAttribute="leading" secondItem="bqX-FD-y8d" secondAttribute="leading" constant="80" id="qgi-Xy-Ezp"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="counter">
@@ -214,6 +221,17 @@
                             <constraint firstItem="mKP-Ib-hd1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ciH-Xc-xCF"/>
                             <constraint firstItem="mKP-Ib-hd1" firstAttribute="top" secondItem="Tg8-02-f71" secondAttribute="bottom" constant="20" id="hW0-Py-CCI"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
+                                <color key="value" red="1" green="1" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="darkColor">
+                                <color key="value" red="0.87450980392156863" green="1" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="patternSize">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="averageWaterDrunk" destination="cbf-Bq-vY4" id="dIn-Yi-n0q"/>
@@ -222,6 +240,7 @@
                         <outlet property="counterView" destination="bqX-FD-y8d" id="tnl-VP-LMV"/>
                         <outlet property="graphView" destination="ncU-Ux-z3D" id="wmi-f9-Kje"/>
                         <outlet property="maxLabel" destination="zG9-Ao-8jk" id="U7F-LG-0Py"/>
+                        <outlet property="medalView" destination="HsH-ms-FIa" id="fb5-EK-E6I"/>
                         <outlet property="stackView" destination="fot-6K-HQM" id="ORU-bA-JM4"/>
                     </connections>
                 </viewController>
@@ -232,7 +251,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1668" y="-271"/>
+            <point key="canvasLocation" x="3871" y="-520"/>
         </scene>
     </scenes>
 </document>

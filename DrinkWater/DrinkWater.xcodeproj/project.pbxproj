@@ -16,6 +16,8 @@
 		2B28E513202CE6000033FDB7 /* DrinkWaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28E512202CE6000033FDB7 /* DrinkWaterTests.swift */; };
 		2B28E51E202CE6000033FDB7 /* DrinkWaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28E51D202CE6000033FDB7 /* DrinkWaterUITests.swift */; };
 		2B28E52C202CE68D0033FDB7 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B28E52B202CE68D0033FDB7 /* PushButton.swift */; };
+		2B6277962038380700FCE7BF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6277952038380700FCE7BF /* BackgroundView.swift */; };
+		2B6277982038888800FCE7BF /* MedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6277972038888800FCE7BF /* MedalView.swift */; };
 		2B832C882030F3FB00C698D9 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B832C872030F3FB00C698D9 /* GraphView.swift */; };
 		2B88D6D120306F9600EAC4AA /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88D6D020306F9600EAC4AA /* CounterView.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		2B28E51D202CE6000033FDB7 /* DrinkWaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterUITests.swift; sourceTree = "<group>"; };
 		2B28E51F202CE6000033FDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B28E52B202CE68D0033FDB7 /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		2B6277952038380700FCE7BF /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = SOURCE_ROOT; };
+		2B6277972038888800FCE7BF /* MedalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalView.swift; sourceTree = SOURCE_ROOT; };
 		2B832C872030F3FB00C698D9 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		2B88D6D020306F9600EAC4AA /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,8 @@
 				2B832C872030F3FB00C698D9 /* GraphView.swift */,
 				2B28E52B202CE68D0033FDB7 /* PushButton.swift */,
 				2B88D6D020306F9600EAC4AA /* CounterView.swift */,
+				2B6277952038380700FCE7BF /* BackgroundView.swift */,
+				2B6277972038888800FCE7BF /* MedalView.swift */,
 				2B28E4FE202CE5FF0033FDB7 /* Main.storyboard */,
 				2B28E504202CE5FF0033FDB7 /* Assets.xcassets */,
 				2B28E506202CE5FF0033FDB7 /* LaunchScreen.storyboard */,
@@ -277,7 +283,9 @@
 				2B28E4FD202CE5FF0033FDB7 /* ViewController.swift in Sources */,
 				2B28E503202CE5FF0033FDB7 /* DrinkWater.xcdatamodeld in Sources */,
 				2B28E4FB202CE5FF0033FDB7 /* AppDelegate.swift in Sources */,
+				2B6277962038380700FCE7BF /* BackgroundView.swift in Sources */,
 				2B28E52C202CE68D0033FDB7 /* PushButton.swift in Sources */,
+				2B6277982038888800FCE7BF /* MedalView.swift in Sources */,
 				2B88D6D120306F9600EAC4AA /* CounterView.swift in Sources */,
 				2B832C882030F3FB00C698D9 /* GraphView.swift in Sources */,
 			);
