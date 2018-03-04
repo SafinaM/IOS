@@ -43,9 +43,9 @@ class Brain
 {
 	static let size: Int = 4
 	static let last: Int = Brain.size * Brain.size
-	static let side: CGFloat = 60.0
-	static let step: CGFloat = 70.0
-	static let origin: CGPoint = CGPoint(x: 100, y: 200)
+	static let dist: CGFloat = 10.0
+	static var step: CGFloat = -1
+	static let origin: CGPoint = CGPoint(x: 10, y: 30)
 	
 	var iEmpty: Int = -1
 	var jEmpty: Int = -1
@@ -55,13 +55,15 @@ class Brain
 	
 	var arr = Array2D<Cell>(columns: size, rows: size, defaultValue: Cell())
 	
-	init(dim: Int) {
+	init(dim: Int, superViewSize: CGSize) {
+		Brain.step = (superViewSize.width - 40) / 4
+		let side: CGFloat = Brain.step - Brain.dist
 		var number = 1
 		for i in 0..<dim {
 			for j in 0..<dim {
 				let x: CGFloat = Brain.origin.x + CGFloat(j) * Brain.step
 				let y: CGFloat = Brain.origin.y + CGFloat(i) * Brain.step
-				let rect: CGRect = CGRect(x: x, y: y, width: Brain.side, height: Brain.side)
+				let rect: CGRect = CGRect(x: x, y: y, width: side, height: side)
 				let cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
 				arr[i, j] = cell
 				number += 1

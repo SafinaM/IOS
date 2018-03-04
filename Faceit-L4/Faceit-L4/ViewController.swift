@@ -13,15 +13,15 @@ class ViewController: UIViewController {
 	var movement: Movement.Direction = .left
 	var touchPoint: CGPoint = CGPoint()
 	
-	@IBOutlet weak var faceView: FaceView!
+	@IBOutlet weak var fifteenView: FifteenView!
 	{
 		didSet {
-			let handler = #selector(FaceView.changeScale(byReactingTo:))
-			let pinchRecognizer = UIPinchGestureRecognizer(target: faceView, action: handler)
-			faceView.addGestureRecognizer(pinchRecognizer)
+			let handler = #selector(FifteenView.changeScale(byReactingTo:))
+			let pinchRecognizer = UIPinchGestureRecognizer(target: FifteenView.self, action: handler)
+			fifteenView.addGestureRecognizer(pinchRecognizer)
 			let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.moveCell(byReactingTo:)))
 			tapRecognizer.numberOfTapsRequired = 1
-			faceView.addGestureRecognizer(tapRecognizer)
+			fifteenView.addGestureRecognizer(tapRecognizer)
 			updateUI()
 		}
 	}
@@ -30,10 +30,10 @@ class ViewController: UIViewController {
 	{
 		
 			if tapRecognizer.state == .ended {
-				faceView.direction = (movement == .right) ? .left: .right
-				movement = (faceView.direction != .right) ? .left: .right
-				touchPoint = tapRecognizer.location(in: faceView)
-				faceView.touchPoint = touchPoint
+				fifteenView.direction = (movement == .right) ? .left: .right
+				movement = (fifteenView.direction != .right) ? .left: .right
+				touchPoint = tapRecognizer.location(in: fifteenView)
+				fifteenView.touchPoint = touchPoint
 				print(touchPoint)
 		}
 		

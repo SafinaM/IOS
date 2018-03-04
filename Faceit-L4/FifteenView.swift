@@ -1,5 +1,5 @@
 //
-//  FaceView.swift
+//  FifteenView.swift
 //  Faceit-L4
 //
 //  Created by LinuxPlus on 1/26/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class FaceView: UIView {
+class FifteenView: UIView {
 	
 	@IBInspectable
 	var scale: CGFloat = 0.5 {didSet { setNeedsDisplay() } }
@@ -33,6 +33,9 @@ class FaceView: UIView {
 	@IBInspectable
 	var direction: Movement.Direction = .left {didSet { setNeedsDisplay() } }
 	
+	static let mainViewSize: CGSize = UIScreen.main.bounds.size
+
+	
 	static let nCells: Int = 4
 	
 	var touchPoint: CGPoint = CGPoint()
@@ -41,7 +44,10 @@ class FaceView: UIView {
 	
 	var rects: [UIBezierPath] = [UIBezierPath]()
 	
-	let brain: Brain = Brain(dim: FaceView.nCells)
+	
+	let brain: Brain = Brain(
+		dim: FifteenView.nCells,
+	    superViewSize: mainViewSize)
 	
 	func changeScale(byReactingTo pinchRecognezer: UIPinchGestureRecognizer)
 	{
@@ -79,9 +85,9 @@ class FaceView: UIView {
 	
     override func draw(_ rect: CGRect) {
 		color.set()
-
-		for i in 0..<FaceView.nCells {
-			for j in 0..<FaceView.nCells {
+		print("MSD size", FifteenView.mainViewSize)
+		for i in 0..<FifteenView.nCells {
+			for j in 0..<FifteenView.nCells {
 				//				let cell: Cell = brain[i,j]
 				if brain[i,j].contains(point: touchPoint) {
 					print("MSD BEFOR brain[\(i), \(j)] contains point \(touchPoint)")
@@ -98,8 +104,8 @@ class FaceView: UIView {
 				
 			}
 		}
-		for i in 0..<FaceView.nCells {
-			for j in 0..<FaceView.nCells {
+		for i in 0..<FifteenView.nCells {
+			for j in 0..<FifteenView.nCells {
 				if !brain[i,j].empty {
 					pathForSkull(cell:
 						brain[i,j]).stroke()
