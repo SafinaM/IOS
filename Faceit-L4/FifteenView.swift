@@ -34,7 +34,6 @@ class FifteenView: UIView {
 	var direction: Movement.Direction = .left {didSet { setNeedsDisplay() } }
 	
 	static let mainViewSize: CGSize = UIScreen.main.bounds.size
-
 	
 	static let nCells: Int = 4
 	
@@ -44,6 +43,7 @@ class FifteenView: UIView {
 	
 	var rects: [UIBezierPath] = [UIBezierPath]()
 	
+	var rotated: Bool = true
 	
 	let brain: Brain = Brain(
 		dim: FifteenView.nCells,
@@ -62,7 +62,8 @@ class FifteenView: UIView {
 		}
 	}
 
-	func drawMyText(myText:String, textColor: UIColor, FontName: String, FontSize: CGFloat, inRect: CGRect){
+	func drawMyText(myText:String, textColor: UIColor, FontName: String, FontSize: CGFloat, inRect: CGRect)
+	{
 		
 		let textFont = UIFont(name: FontName, size: FontSize)!
 		let textFontAttributes = [
@@ -115,6 +116,16 @@ class FifteenView: UIView {
 		if brain.finished() {
 			print("MSD It is done!!!")
 		}
+		let screen: AppDelegate = AppDelegate()
+		
+		print("MSD rotated = \(rotated)")
+		let isPortrait = screen.rotated()
+		if isPortrait != rotated {
+			print("Orientation was changed")
+			rotated = screen.rotated()
+			brain.setBrain(superViewSize: FifteenView.mainViewSize, isPortrait: isPortrait)
+		}
+		print("MSD draw was called")
 	}
 	
 }

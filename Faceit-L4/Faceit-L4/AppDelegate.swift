@@ -17,7 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
 		return true
+	}
+	
+	func rotated() -> Bool {
+		if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+			print("MSD delegate rotated = true")
+			return true
+		}
+		print("MSD delegate rotated = false")
+		return false
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {

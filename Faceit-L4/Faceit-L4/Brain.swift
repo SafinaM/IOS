@@ -41,11 +41,14 @@ struct Cell
 
 class Brain
 {
-	static let size: Int = 4
-	static let last: Int = Brain.size * Brain.size
+	static var dimSize: Int = 4
+	static let last: Int = Brain.dimSize * Brain.dimSize
 	static let dist: CGFloat = 10.0
 	static var step: CGFloat = -1
 	static let origin: CGPoint = CGPoint(x: 10, y: 30)
+	static var side: CGFloat = 80
+	
+	var wasChanged: Bool = false
 	
 	var iEmpty: Int = -1
 	var jEmpty: Int = -1
@@ -53,27 +56,42 @@ class Brain
 	var iActive: Int = -1
 	var jActive: Int = -1
 	
-	var arr = Array2D<Cell>(columns: size, rows: size, defaultValue: Cell())
+	var arr = Array2D<Cell>(columns: dimSize, rows: dimSize, defaultValue: Cell())
 	
+//	call only one time
 	init(dim: Int, superViewSize: CGSize) {
 		Brain.step = (superViewSize.width - 40) / 4
-		let side: CGFloat = Brain.step - Brain.dist
-		var number = 1
-		for i in 0..<dim {
-			for j in 0..<dim {
-				let x: CGFloat = Brain.origin.x + CGFloat(j) * Brain.step
-				let y: CGFloat = Brain.origin.y + CGFloat(i) * Brain.step
-				let rect: CGRect = CGRect(x: x, y: y, width: side, height: side)
-				let cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
-				arr[i, j] = cell
-				number += 1
-			}
-		}
+		Brain.dimSize = dim
+		Brain.side = Brain.step - Brain.dist
+		setBrain(superViewSize: superViewSize, isPortrait: true)
+		
 		setLastAsEmpty()
 		shuffle()
 		while (!checkSolving()) {
 			shuffle()
 			print("MSD checkSolving = ", checkSolving())
+		}
+	}
+	
+	func setBrain(superViewSize: CGSize, isPortrait: Bool) {
+		let width = min(superViewSize.width, superViewSize.height)
+		let height = max(superViewSize.width, superViewSize.height)
+		print("MSD origin \(width), \(height)")
+		var or: CGPoint = CGPoint(x: superViewSize.width / 2, y: superViewSize.height / 2 )
+		if !isPortrait {
+			or = CGPoint(x: superViewSize.height / 2, y: superViewSize.width / 2)
+		}
+		
+		var number = 1
+		for i in 0..<Brain.dimSize {
+			for j in 0..<Brain.dimSize {
+				let x: CGFloat = or.x + CGFloat(j) * Brain.step
+				let y: CGFloat = or.y + CGFloat(i) * Brain.step
+				let rect: CGRect = CGRect(x: x, y: y, width: Brain.side, height: Brain.side)
+				let cell = Cell(rect: rect, active: false, name: String(number), number: number, empty: false)
+				arr[i, j] = cell
+				number += 1
+			}
 		}
 	}
 	
@@ -108,8 +126,8 @@ class Brain
 	
 	func finished() -> Bool {
 		var k: Int = 0
-		for i in 0..<Brain.size {
-			for j in 0..<Brain.size {
+		for i in 0..<Brain.dimSize {
+			for j in 0..<Brain.dimSize {
 				if arr[i, j].name != String(k+1) {
 					return false
 				}
@@ -145,7 +163,7 @@ class Brain
 	}
 	
 	private func setLastAsEmpty() -> Void {
-		setEmpty(i: Brain.size-1, j: Brain.size-1)
+		setEmpty(i: Brain.dimSize-1, j: Brain.dimSize-1)
 	}
 	
 	
@@ -187,8 +205,12 @@ class Brain
 				}
 			}
 		}
-		return (N + iEmpty+1) % 2 == 0
+		return (N + iEmpty + 1) % 2 == 0
 	}
+	
+//	func verifyWasChanged() {
+//		Delega
+//	}
 }
 
 class Array2D<T> {
