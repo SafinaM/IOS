@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 	var movement: Movement.Direction = .left
 	var touchPoint: CGPoint = CGPoint()
 	
+	
 	@IBOutlet weak var fifteenView: FifteenView!
 	{
 		didSet {

@@ -45,7 +45,7 @@ class Brain
 	static let last: Int = Brain.dimSize * Brain.dimSize
 	static let dist: CGFloat = 10.0
 	static var step: CGFloat = -1
-	static let origin: CGPoint = CGPoint(x: 10, y: 30)
+	static let origin: CGPoint = CGPoint(x: 10, y: 100)
 	static var side: CGFloat = 80
 	
 	var wasChanged: Bool = false
