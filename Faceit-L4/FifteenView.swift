@@ -116,15 +116,15 @@ class FifteenView: UIView {
 		if brain.finished() {
 			print("MSD It is done!!!")
 		}
-		let screen: AppDelegate = AppDelegate()
+//		let screen: AppDelegate = AppDelegate()
 		
-		print("MSD rotated = \(rotated)")
-		let isPortrait = screen.rotated()
-		if isPortrait != rotated {
-			print("Orientation was changed")
-			rotated = screen.rotated()
-			brain.setBrain(superViewSize: FifteenView.mainViewSize, isPortrait: isPortrait)
-		}
+//		print("MSD rotated = \(rotated)")
+//		let isPortrait = screen.rotated()
+//		if isPortrait != rotated {
+//			print("Orientation was changed")
+//			rotated = screen.rotated()
+//			brain.reSetBrain(superViewSize: FifteenView.mainViewSize, isPortrait: isPortrait)
+//		}
 		print("MSD draw was called")
 	}
 	
