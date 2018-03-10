@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Faceit-L4
 //
-//  Created by LinuxPlus on 1/26/18.
-//  Copyright © 2018 Stanford Uneversity. All rights reserved.
+//  Created by MarinaS on 1/26/18.
+//  Copyright © 2018 MarinaS. All rights reserved.
 //
 
 import UIKit
@@ -40,9 +40,23 @@ class ViewController: UIViewController {
 		
 	}
 	
+	var game = GameEnum(games: .restart) {
+		didSet {
+			updateUI()
+		}
+	}
+	
 	private func updateUI()
 	{
-
+		print("MSD game = ", game.games)
+		switch game.games {
+		case .restart:
+			FifteenView.restartGame = true
+			FifteenView.savedGame = false
+		case .saved:
+			FifteenView.restartGame = false
+			FifteenView.savedGame = true
+		}
 	}
 	
 	override func viewDidLoad() {

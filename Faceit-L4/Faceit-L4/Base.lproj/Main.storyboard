@@ -22,30 +22,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-8i-MKh">
-                                <rect key="frame" x="107" y="243" width="160" height="180"/>
+                                <rect key="frame" x="124" y="273" width="126" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwG-aw-Cnj">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="Game"/>
+                                        <state key="normal" title="Restart"/>
                                         <connections>
-                                            <segue destination="eGf-Fo-9Ee" kind="showDetail" identifier="game" id="lyg-aw-olz"/>
+                                            <segue destination="eGf-Fo-9Ee" kind="showDetail" identifier="restart" id="lyg-aw-olz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zau-q5-OzA">
-                                        <rect key="frame" x="0.0" y="60" width="160" height="60"/>
+                                        <rect key="frame" x="0.0" y="60" width="126" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="Continue"/>
+                                        <state key="normal" title="Saved"/>
                                         <connections>
-                                            <segue destination="eGf-Fo-9Ee" kind="showDetail" identifier="continue" id="fbr-wd-pDU"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-R6-5gl">
-                                        <rect key="frame" x="0.0" y="120" width="160" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="Score"/>
-                                        <connections>
-                                            <segue destination="eGf-Fo-9Ee" kind="showDetail" identifier="score" id="oQf-Th-pNa"/>
+                                            <segue destination="eGf-Fo-9Ee" kind="showDetail" identifier="saved" id="fbr-wd-pDU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8H6-nq-IGK" userLabel="fifteenView" customClass="FifteenView" customModule="Faceit_L4" customModuleProvider="target">
-                                        <rect key="frame" x="19.5" y="-0.5" width="335" height="667"/>
+                                        <rect key="frame" x="20" y="-0.5" width="335" height="667"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="scale">
@@ -168,6 +160,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oQf-Th-pNa"/>
+        <segue reference="fbr-wd-pDU"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -2,27 +2,30 @@
 //  menuViewController.swift
 //  Faceit-L4
 //
-//  Created by LinuxPlus on 3/9/18.
-//  Copyright © 2018 Stanford Uneversity. All rights reserved.
+//  Created by MarinaS on 3/9/18.
+//  Copyright © 2018 Stanford University. All rights reserved.
 //
 
 import UIKit
 
 class MenuViewController: UIViewController {
 
+	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		let destinationViewController = segue.destination
+		var destinationViewController = segue.destination
+		if let navigationController = destinationViewController as? UINavigationController {
+			destinationViewController = navigationController.visibleViewController ?? destinationViewController
+		}
 		if let fifteenViewController = destinationViewController as? ViewController,
 			let identifier = segue.identifier,
-			let comb = combinations[identifier] {
+			let segueType = combinations[identifier] {
 			
-//			fifteenViewController.fifteenView =
+			fifteenViewController.game = segueType
 	}
 }
 
-	private let combinations: Dictionary<String, String> = [
-		"game" : "new game",
-		"continue" : "cont",
-		"score" : "score"
+	private let combinations: Dictionary<String, GameEnum> = [
+		"restart" : GameEnum(games: .restart),
+		"saved" : GameEnum(games: .saved),
 	]
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1356742053BFE40006D575 /* GameEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1356732053BFE40006D575 /* GameEnum.swift */; };
 		2BD16390201DFF4A003D36FE /* Movements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1638F201DFF4A003D36FE /* Movements.swift */; };
 		2BD16392201E4F4A003D36FE /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD16391201E4F4A003D36FE /* Brain.swift */; };
 		2BD1B690201BCC0200FB02C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1B68F201BCC0200FB02C3 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B1356732053BFE40006D575 /* GameEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEnum.swift; sourceTree = "<group>"; };
 		2BD1638F201DFF4A003D36FE /* Movements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movements.swift; sourceTree = "<group>"; };
 		2BD16391201E4F4A003D36FE /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		2BD1B68C201BCC0200FB02C3 /* Faceit-L4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Faceit-L4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				2BD1B6C1201BCD8100FB02C3 /* FifteenView.swift */,
 				2BFD1F822052DEDF00A8A434 /* MenuViewController.swift */,
 				2BD16391201E4F4A003D36FE /* Brain.swift */,
+				2B1356732053BFE40006D575 /* GameEnum.swift */,
 				2BD1B693201BCC0200FB02C3 /* Main.storyboard */,
 			);
 			path = "Faceit-L4";
@@ -290,6 +293,7 @@
 				2BD16390201DFF4A003D36FE /* Movements.swift in Sources */,
 				2BD1B690201BCC0200FB02C3 /* AppDelegate.swift in Sources */,
 				2BD1B698201BCC0200FB02C3 /* Faceit_L4.xcdatamodeld in Sources */,
+				2B1356742053BFE40006D575 /* GameEnum.swift in Sources */,
 				2BFD1F832052DEDF00A8A434 /* MenuViewController.swift in Sources */,
 				2BD1B6C2201BCD8100FB02C3 /* FifteenView.swift in Sources */,
 			);

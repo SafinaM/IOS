@@ -2,8 +2,8 @@
 //  Movements.swift
 //  Faceit-L4
 //
-//  Created by LinuxPlus on 1/28/18.
-//  Copyright © 2018 Stanford Uneversity. All rights reserved.
+//  Created by MarinaS on 1/28/18.
+//  Copyright © 2018 Stanford University. All rights reserved.
 //
 
 import Foundation

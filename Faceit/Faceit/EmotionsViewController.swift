@@ -32,6 +32,4 @@ class EmotionsViewController: VCLLoggingViewController {
 		"worried" : FacialExpression(eyes: .open,  mouth: .smirk)
 	]
 
-	
-
 }

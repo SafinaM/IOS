@@ -2,8 +2,8 @@
 //  Faceit_L4UITests.swift
 //  Faceit-L4UITests
 //
-//  Created by LinuxPlus on 1/26/18.
-//  Copyright © 2018 Stanford Uneversity. All rights reserved.
+//  Created by MarinaS on 1/26/18.
+//  Copyright © 2018 Stanford University. All rights reserved.
 //
 
 import XCTest

@@ -2,8 +2,8 @@
 //  FifteenView.swift
 //  Faceit-L4
 //
-//  Created by LinuxPlus on 1/26/18.
-//  Copyright © 2018 Stanford Uneversity. All rights reserved.
+//  Created by MarinaS on 1/26/18.
+//  Copyright © 2018 Stanford University. All rights reserved.
 //
 
 import UIKit
@@ -45,9 +45,17 @@ class FifteenView: UIView {
 	
 	var rotated: Bool = true
 	
-	let brain: Brain = Brain(
+	static var restartGame: Bool = true
+	
+	static var savedGame: Bool = false
+
+	var brain: Brain = Brain(
 		dim: FifteenView.nCells,
 	    superViewSize: mainViewSize)
+	
+	static var savedBrain: Brain = Brain(
+		dim: FifteenView.nCells,
+		superViewSize: mainViewSize)
 	
 	func changeScale(byReactingTo pinchRecognezer: UIPinchGestureRecognizer)
 	{
@@ -86,6 +94,11 @@ class FifteenView: UIView {
 	
     override func draw(_ rect: CGRect) {
 		color.set()
+		
+		if FifteenView.savedGame {
+			brain = FifteenView.savedBrain
+		}
+		
 		print("MSD size", FifteenView.mainViewSize)
 		for i in 0..<FifteenView.nCells {
 			for j in 0..<FifteenView.nCells {
@@ -102,7 +115,6 @@ class FifteenView: UIView {
 					
 					print("MSD AFTER setting brain[\(brain.iEmpty), \(brain.jEmpty)] is empty")
 				}
-				
 			}
 		}
 		for i in 0..<FifteenView.nCells {
@@ -116,6 +128,9 @@ class FifteenView: UIView {
 		if brain.finished() {
 			print("MSD It is done!!!")
 		}
+		
+		FifteenView.savedBrain = brain
+		
 //		let screen: AppDelegate = AppDelegate()
 		
 //		print("MSD rotated = \(rotated)")
