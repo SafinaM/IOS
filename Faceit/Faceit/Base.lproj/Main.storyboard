@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-2077" y="-575"/>
         </scene>
-        <!--Face View Controller-->
+        <!--Blinking Face View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FaceViewController" customModule="Faceit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BlinkingFaceViewController" customModule="Faceit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -39,6 +39,7 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Sdr-cC-ePf" customClass="FaceView" customModule="Faceit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="eyesOpen" value="NO"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
@@ -54,6 +55,9 @@
                                         <real key="value" value="0.90000000000000002"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bGe-CG-bFJ" appends="YES" id="mP0-op-JuV"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,6 +74,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bGe-CG-bFJ">
+                    <connections>
+                        <action selector="shakeHead:" destination="BYZ-38-t0r" id="WB9-rh-mOh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-341" y="-107"/>
         </scene>
@@ -165,6 +174,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rXq-fV-XYD"/>
+        <segue reference="w5S-5Q-V8h"/>
     </inferredMetricsTieBreakers>
 </document>
