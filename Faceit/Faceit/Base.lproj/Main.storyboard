@@ -139,7 +139,9 @@
                     <navigationItem key="navigationItem" title="Emotions" id="mK6-M0-irr">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="0vm-oz-phI">
                             <connections>
-                                <segue destination="khv-dg-BHN" kind="presentation" id="Ied-J7-1Na"/>
+                                <segue destination="khv-dg-BHN" kind="popoverPresentation" popoverAnchorBarButtonItem="0vm-oz-phI" id="Ied-J7-1Na">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -275,6 +277,11 @@
                                 <action selector="cancel:" destination="oCP-xm-bz7" id="C6m-8Y-pw4"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="kcK-ec-Jfl">
+                            <connections>
+                                <segue destination="7yE-Au-fiJ" kind="unwind" identifier="Add Emotion" unwindAction="addEmotionalFaceFrom:" id="9o6-nc-o3c"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="eyeControl" destination="05a-wk-5l3" id="Z6i-au-vt5"/>
@@ -283,6 +290,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0q-fD-9H5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7yE-Au-fiJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1249" y="-966"/>
         </scene>
@@ -334,9 +342,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="398" height="143"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixW-Y1-VhQ" customClass="FaceView" customModule="Faceit" customModuleProvider="target">
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ixW-Y1-VhQ" customClass="FaceView" customModule="Faceit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="398" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
@@ -357,6 +364,12 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ixW-Y1-VhQ" secondAttribute="trailing" id="6gI-cd-65G"/>
+                            <constraint firstItem="ixW-Y1-VhQ" firstAttribute="leading" secondItem="dU5-BH-Ged" secondAttribute="leading" id="Y7l-fB-IWl"/>
+                            <constraint firstItem="ixW-Y1-VhQ" firstAttribute="bottom" secondItem="du8-hY-mdz" secondAttribute="top" id="k3V-su-a7g"/>
+                            <constraint firstItem="ixW-Y1-VhQ" firstAttribute="top" secondItem="p0R-hT-QyK" secondAttribute="bottom" id="lbE-gy-McZ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="faceView" destination="ixW-Y1-VhQ" id="5QX-md-JQr"/>

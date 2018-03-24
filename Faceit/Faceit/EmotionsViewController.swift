@@ -8,7 +8,8 @@
 
 import UIKit
 
-class EmotionsViewController: UITableViewController {
+class EmotionsViewController: UITableViewController, UIPopoverPresentationControllerDelegate
+{
 	
 	// MARK: Model
 	
@@ -18,6 +19,13 @@ class EmotionsViewController: UITableViewController {
 		("Worried", FacialExpression(eyes: .open,  mouth: .smirk))
 	]
 	
+	
+	@IBAction func addEmotionalFace(from segue: UIStoryboardSegue) {
+		if let editor = segue.source as? ExpressionEditorViewController {
+			emotionalFaces.append((editor.name, editor.expression))
+			tableView.reloadData()
+		}
+	}
 	
 	// MARK: UITableViewDataSource
 	
@@ -35,18 +43,31 @@ class EmotionsViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		var destinantionViewContrller = segue.destination
-		if let navigationController = destinantionViewContrller as? UINavigationController {
-			destinantionViewContrller = navigationController.visibleViewController ?? destinantionViewContrller
+		var destinationViewController = segue.destination
+		if let navigationController = destinationViewController as? UINavigationController {
+			destinationViewController = navigationController.visibleViewController ?? destinationViewController
 		}
-		if let faceViewController = destinantionViewContrller as? FaceViewController,
+		if let faceViewController = destinationViewController as? FaceViewController,
 			let cell = sender as? UITableViewCell,
 			let indexPath = tableView.indexPath(for: cell) {
 			faceViewController.expression = emotionalFaces[indexPath.row].expression
 			faceViewController.navigationItem.title = emotionalFaces[indexPath.row].name
+		} else if destinationViewController is ExpressionEditorViewController {
+			if let popoverPresentationController = segue.destination.popoverPresentationController {
+				popoverPresentationController.delegate = self
+			}
 		}
 	}
-	
-	
-
+	func adaptivePresentationStyle(
+		for controller: UIPresentationController,
+		traitCollection: UITraitCollection
+		) -> UIModalPresentationStyle {
+		if traitCollection.verticalSizeClass == .compact {
+			return .none
+		} else if traitCollection.horizontalSizeClass == .compact {
+			return .overFullScreen
+		} else {
+			return .none
+		}
+	}
 }
