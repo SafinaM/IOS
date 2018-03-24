@@ -39,7 +39,7 @@ class AsteroidFieldView: UIView
             asteroid.frame.size = (asteroid.frame.size / (asteroid.frame.size.area / averageAsteroidSize.area)) * CGFloat.random(in: minAsteroidSize..<maxAsteroidSize)
             repeat {
                 asteroid.frame.origin = bounds.randomPoint
-            } while !exclusionZone.isEmpty && asteroid.frame.intersects(exclusionZone)
+            } while exclusionZone.isEmpty && asteroid.frame.intersects(exclusionZone)
             addSubview(asteroid)
             asteroidBehavior?.addAsteroid(asteroid)
         }
