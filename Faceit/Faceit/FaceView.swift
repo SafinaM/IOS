@@ -13,7 +13,8 @@ import UIKit
 class FaceView: UIView
 {
     @IBInspectable
-    var mouthCurvature: Double = 0.5 // 1.0 is full smile and -1.0 is full frown
+    var mouthCurvature: Double = 0.5 { didSet{setNeedsDisplay() } }
+	// 1.0 is full smile and -1.0 is full frown
     
     @IBInspectable
     var scale: CGFloat = 0.9 { didSet{setNeedsDisplay() } }

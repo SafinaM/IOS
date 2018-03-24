@@ -167,7 +167,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="85Q-6R-Ecd">
-                                                    <rect key="frame" x="173.66666666666666" y="7.3333333333333339" width="67.666666666666686" height="29"/>
+                                                    <rect key="frame" x="174" y="7" width="68" height="29"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -183,18 +183,25 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="6O5-IT-oR4">
-                                        <rect key="frame" x="0.0" y="24" width="414" height="160"/>
+                                        <rect key="frame" x="0.0" y="44" width="414" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6O5-IT-oR4" id="kbR-Lf-zhS">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMc-6n-WTi" customClass="FaceView" customModule="Faceit" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="406" height="151"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2z-77-kPv">
+                                                    <rect key="frame" x="8" y="8" width="398" height="143"/>
+                                                    <connections>
+                                                        <segue destination="86R-GT-ebi" kind="embed" identifier="Embed Face" id="4kT-qA-3Du"/>
+                                                    </connections>
+                                                </containerView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="c2z-77-kPv" firstAttribute="bottom" secondItem="kbR-Lf-zhS" secondAttribute="bottomMargin" id="Ksf-HO-dPc"/>
+                                                <constraint firstItem="c2z-77-kPv" firstAttribute="trailing" secondItem="kbR-Lf-zhS" secondAttribute="trailingMargin" id="Umj-3F-4S7"/>
+                                                <constraint firstItem="c2z-77-kPv" firstAttribute="top" secondItem="kbR-Lf-zhS" secondAttribute="topMargin" id="YRw-tH-d7r"/>
+                                                <constraint firstItem="c2z-77-kPv" firstAttribute="leading" secondItem="kbR-Lf-zhS" secondAttribute="leadingMargin" id="j1T-Rs-10N"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LBo-Oy-mIE">
@@ -205,7 +212,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="05a-wk-5l3">
-                                                    <rect key="frame" x="72.666666666666686" y="8" width="269" height="29"/>
+                                                    <rect key="frame" x="73" y="8" width="269" height="29"/>
                                                     <segments>
                                                         <segment title="Eyes Open"/>
                                                         <segment title="Eyes Closed"/>
@@ -232,7 +239,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h45-p1-spl">
-                                                    <rect key="frame" x="57.666666666666657" y="8" width="299" height="29"/>
+                                                    <rect key="frame" x="58" y="8" width="299" height="29"/>
                                                     <segments>
                                                         <segment title="Frown"/>
                                                         <segment title="Smirk"/>
@@ -242,6 +249,7 @@
                                                     </segments>
                                                     <connections>
                                                         <action selector="updateFace" destination="oCP-xm-bz7" eventType="valueChanged" id="eWy-1K-uR7"/>
+                                                        <action selector="updateMouth:" destination="oCP-xm-bz7" eventType="valueChanged" id="TnN-Mg-9Ht"/>
                                                     </connections>
                                                 </segmentedControl>
                                             </subviews>
@@ -276,7 +284,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0q-fD-9H5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1371.0144927536232" y="-965.21739130434787"/>
+            <point key="canvasLocation" x="1249" y="-966"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ENC-VO-ibf">
@@ -313,6 +321,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQB-zu-nhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="466.66666666666669" y="-965.21739130434787"/>
+        </scene>
+        <!--Blinking Face View Controller-->
+        <scene sceneID="ugU-mL-C5P">
+            <objects>
+                <viewController id="86R-GT-ebi" customClass="BlinkingFaceViewController" customModule="Faceit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p0R-hT-QyK"/>
+                        <viewControllerLayoutGuide type="bottom" id="du8-hY-mdz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dU5-BH-Ged">
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="143"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixW-Y1-VhQ" customClass="FaceView" customModule="Faceit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="398" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="eyesOpen" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.92294770079999999" green="0.59945969529999998" blue="0.22626908979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="faceView" destination="ixW-Y1-VhQ" id="5QX-md-JQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnE-Zi-nb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128" y="-965"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
