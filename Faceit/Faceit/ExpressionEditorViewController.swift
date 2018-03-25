@@ -37,11 +37,31 @@ class ExpressionEditorViewController: UITableViewController, UITextFieldDelegate
 	@IBOutlet weak var mouthControl: UISegmentedControl!
 	
 	private var faceViewController: BlinkingFaceViewController?
+	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "Embed Face" {
 			faceViewController = segue.destination as? BlinkingFaceViewController
 			faceViewController?.expression = expression
 		}
+	}
+	
+	override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+		if identifier == "Add Emotion", name.isEmpty {
+			handleUnnamedFace()
+			return false
+		} else {
+			return super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
+		}
+	}
+	
+	private func handleUnnamedFace() {
+		let alert = UIAlertController(title: "Invalid Face", message: "A face must have a name.", preferredStyle: .alert)
+		alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+			self.nameTextField?.text = alert.textFields?.first?.text
+			self.performSegue(withIdentifier: "Add Emotion", sender: nil)
+		}))
+		alert.addTextField(configurationHandler: nil)
+		present(alert, animated: true)
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
