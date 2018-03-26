@@ -10,15 +10,17 @@ import UIKit
 @IBDesignable
 class CoordinateSystem: UIView
 {
+	static var tapPressed = false
+	var touchPoint: CGPoint = CGPoint() {didSet { setNeedsDisplay() } }
 	struct Constants
 	{
 		static let origin1 = CGPoint(x: 200, y: 200)
 		static let origin2 = CGPoint(x: 200, y: 400)
 		static let origin3 = CGPoint(x: 200, y: 600)
 		static let pointArray: [Point] = [Point(0, -200, 0), Point(200, 0, 0), Point(0, 0, 200)]
-		static let pitch: CGFloat = 0.2
-		static let yaw: CGFloat = -0.6
-		static let roll: CGFloat = 0.1
+		static var pitch: CGFloat = 0.2
+		static var yaw: CGFloat = -0.6
+		static var roll: CGFloat = 0.1
 	}
 	
 	struct Point {
@@ -86,12 +88,17 @@ class CoordinateSystem: UIView
     override func draw(_ rect: CGRect) {
 		let path = UIBezierPath()
 		let rotatedArray = rotatePointArray(points: Constants.pointArray, pitch: Constants.pitch, yaw: Constants.yaw, roll: Constants.roll)
-		let array = moveArrayToOrigin(points: rotatedArray, origin: Constants.origin3)
+		let array = moveArrayToOrigin(points: rotatedArray, origin: Constants.origin2)
 		for p in array {
-			path.move(to: Constants.origin3)
+			path.move(to: Constants.origin2)
 			path.addLine(to: p)
 		}
-		UIColor.green.set()
+		path.lineWidth = 3.0
+		UIColor.black.set()
 		path.stroke()
+		if CoordinateSystem.tapPressed {
+			self.draw(rect)
+			CoordinateSystem.tapPressed = false
+		}
     }
 }
